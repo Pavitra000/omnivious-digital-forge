@@ -4,40 +4,26 @@ import { ExternalLink, TrendingUp, Users, Zap } from 'lucide-react';
 const CaseStudies = () => {
   const caseStudies = [
     {
-      title: 'E-commerce Revenue Boost',
-      client: 'TechRetail Co.',
-      description: 'Implemented AI-powered recommendation engine and automated customer service.',
+      title: 'Legal Documentation Automated',
+      client: 'MLA Legal Firm',
+      description: 'Implemented AI-powered recommendation engine and automated legal documentation.',
       results: [
-        { label: 'Revenue Increase', value: '340%', icon: TrendingUp },
-        { label: 'Customer Satisfaction', value: '95%', icon: Users },
-        { label: 'Processing Speed', value: '10x', icon: Zap }
+        { label: 'Revenue Increase', value: '40%', icon: TrendingUp },
+        { label: 'Processing Speed', value: '6x', icon: Zap }
       ],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500',
-      tags: ['AI', 'E-commerce', 'Automation']
+      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=500',
+      tags: ['AI', 'Legal', 'Automation']
     },
     {
-      title: 'Manufacturing Process Optimization',
-      client: 'IndustrialTech Ltd.',
-      description: 'Automated quality control and predictive maintenance using computer vision and IoT.',
+      title: 'Automated Workflow for Overall Data',
+      client: 'Enterprise Client',
+      description: 'Automated data entry from complex data and customer support systems.',
       results: [
-        { label: 'Cost Reduction', value: '60%', icon: TrendingUp },
-        { label: 'Defect Detection', value: '99.8%', icon: Zap },
-        { label: 'Downtime Reduction', value: '75%', icon: Users }
+        { label: 'Revenue Increase', value: '20%', icon: TrendingUp },
+        { label: 'Processing Speed', value: '3x', icon: Zap }
       ],
-      image: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=500',
-      tags: ['Computer Vision', 'IoT', 'Manufacturing']
-    },
-    {
-      title: 'Healthcare Data Analytics',
-      client: 'MedCare Systems',
-      description: 'Built comprehensive patient management system with AI-driven insights.',
-      results: [
-        { label: 'Efficiency Gain', value: '200%', icon: Zap },
-        { label: 'Patient Satisfaction', value: '98%', icon: Users },
-        { label: 'Cost Savings', value: '45%', icon: TrendingUp }
-      ],
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=500',
-      tags: ['Healthcare', 'Data Analytics', 'AI']
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500',
+      tags: ['Data Automation', 'Workflow', 'Support']
     }
   ];
 
@@ -55,7 +41,7 @@ const CaseStudies = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {caseStudies.map((study, index) => (
             <div
               key={index}

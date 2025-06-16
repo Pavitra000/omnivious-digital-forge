@@ -1,5 +1,6 @@
 
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -46,10 +47,13 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <button className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center">
-            Get Your Free AI Audit
+          <Link 
+            to="/contact"
+            className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center"
+          >
+            Get Your Free Audit
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
-          </button>
+          </Link>
           
           <button className="group border-2 border-gray-600 hover:border-blue-400 text-gray-300 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:bg-blue-400/10">
             View Our Work

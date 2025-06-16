@@ -1,30 +1,24 @@
 
-import { Mail, Phone, Instagram, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@omnivious.com',
-      href: 'mailto:hello@omnivious.com'
+      value: 'omnivious2025@gmail.com',
+      href: 'mailto:omnivious2025@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
-    },
-    {
-      icon: Instagram,
-      label: 'Instagram',
-      value: '@omnivious_ai',
-      href: 'https://instagram.com/omnivious_ai'
+      value: '8287171799',
+      href: 'tel:8287171799'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'New Delhi, India',
       href: '#'
     }
   ];
@@ -44,23 +38,22 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
+        <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Get in Touch</h3>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {contactInfo.map((info, index) => (
                 <a
                   key={index}
                   href={info.href}
-                  className="group flex items-center p-4 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
+                  className="group flex flex-col items-center p-6 bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm border border-gray-700 rounded-xl hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
                 >
-                  <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-lg mr-4">
-                    <info.icon className="text-white" size={20} />
+                  <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-4 rounded-lg mb-4">
+                    <info.icon className="text-white" size={24} />
                   </div>
-                  <div>
-                    <p className="text-gray-400 text-sm">{info.label}</p>
+                  <div className="text-center">
+                    <p className="text-gray-400 text-sm mb-2">{info.label}</p>
                     <p className="text-white font-semibold group-hover:text-blue-400 transition-colors">
                       {info.value}
                     </p>
@@ -69,98 +62,27 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-xl p-6">
+            <div className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-xl p-6 text-center">
               <h4 className="text-xl font-bold text-white mb-3">Free AI Audit</h4>
               <p className="text-gray-300 mb-4">
                 Get a personalized analysis of your business processes and discover 
                 opportunities for AI-powered optimization.
               </p>
-              <ul className="space-y-2 text-gray-400">
-                <li className="flex items-center">
+              <ul className="space-y-2 text-gray-400 max-w-md mx-auto">
+                <li className="flex items-center justify-center">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
                   Process automation opportunities
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
                   Cost reduction potential
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
                   Revenue optimization strategies
                 </li>
               </ul>
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
-            
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-gray-300 text-sm font-medium mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label className="block text-gray-300 text-sm font-medium mb-2">
-                    Last Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-gray-300 text-sm font-medium mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="john@company.com"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-gray-300 text-sm font-medium mb-2">
-                  Company
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
-                  placeholder="Your Company"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-gray-300 text-sm font-medium mb-2">
-                  Message
-                </label>
-                <textarea
-                  rows={4}
-                  className="w-full px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors resize-none"
-                  placeholder="Tell us about your project and how we can help..."
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
-              >
-                Send Message
-                <Send className="ml-2" size={18} />
-              </button>
-            </form>
           </div>
         </div>
       </div>

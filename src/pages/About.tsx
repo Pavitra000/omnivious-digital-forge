@@ -26,27 +26,6 @@ const About = () => {
     }
   ];
 
-  const team = [
-    {
-      name: 'Alex Rodriguez',
-      role: 'CEO & AI Strategist',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300',
-      bio: 'Former Google AI researcher with 10+ years in machine learning and business transformation.'
-    },
-    {
-      name: 'Sarah Chen',
-      role: 'CTO & Lead Developer',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b0a2b41b?w=300',
-      bio: 'Full-stack architect specializing in scalable AI systems and cloud infrastructure.'
-    },
-    {
-      name: 'Marcus Johnson',
-      role: 'Head of Automation',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300',
-      bio: 'Process optimization expert with a track record of reducing operational costs by 60%+ across industries.'
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-black text-white">
       <Navigation />
@@ -73,18 +52,18 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                Founded in 2020, Omnivious emerged from a simple observation: most businesses were 
+                Omnivious emerged from a simple observation: most businesses were 
                 struggling to harness the power of AI and automation, not because the technology 
                 wasn't available, but because it wasn't accessible or tailored to their specific needs.
               </p>
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                Our founders, coming from backgrounds at Google, Tesla, and successful startups, 
-                recognized that the gap between cutting-edge AI research and practical business 
+                Our founders recognized that the gap between cutting-edge AI research and practical business 
                 applications was preventing companies from realizing their full potential.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Today, we've helped over 200 businesses across 15 industries transform their 
-                operations, increase revenue, and reduce costs through personalized AI solutions.
+                Today, we've helped multiple businesses transform their 
+                operations, increase revenue, and reduce costs through personalized AI solutions, 
+                with our previous record of a 60% revenue saving.
               </p>
             </div>
             <div className="relative">
@@ -126,45 +105,6 @@ const About = () => {
                   <h3 className="text-2xl font-bold text-white">{value.title}</h3>
                 </div>
                 <p className="text-gray-300 leading-relaxed">{value.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-                Meet Our Team
-              </span>
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Experienced professionals passionate about making AI accessible and impactful.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="group bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
-                  <p className="text-blue-400 font-semibold mb-4">{member.role}</p>
-                  <p className="text-gray-300 leading-relaxed">{member.bio}</p>
-                </div>
               </div>
             ))}
           </div>

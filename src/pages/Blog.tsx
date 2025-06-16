@@ -100,35 +100,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Newsletter Signup */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900/50 to-black">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 to-green-500 bg-clip-text text-transparent">
-              Be the First to Know
-            </span>
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Subscribe to our newsletter for early access to new articles, case studies, and AI insights.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors"
-            />
-            <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300">
-              Subscribe
-            </button>
-          </div>
-          
-          <p className="text-gray-400 text-sm mt-4">
-            No spam, just valuable insights. Unsubscribe anytime.
-          </p>
-        </div>
-      </section>
-
       {/* Topics Preview */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
